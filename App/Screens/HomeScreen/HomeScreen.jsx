@@ -1,12 +1,13 @@
-import { Text, View } from 'react-native'
+import { ScrollView, Text, View } from 'react-native'
 import React from 'react'
 import Header from './Header'
 import Slider from './Slider'
 import Categories from './Categories'
+import LatestBusiness from './LatestBusiness'
 
 export default function HomeScreen() {
     return (
-        <View>
+        <ScrollView>
             {/* Header */}
             <Header />
 
@@ -14,7 +15,10 @@ export default function HomeScreen() {
             <Slider />
 
             {/* Categories */}
-            <Categories/>
-        </View>
+            <Categories />
+
+            {/* Latest Business */}
+            <LatestBusiness />
+        </ScrollView>
     )
 }
