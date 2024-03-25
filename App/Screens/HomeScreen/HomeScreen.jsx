@@ -2,6 +2,7 @@ import { Text, View } from 'react-native'
 import React from 'react'
 import Header from './Header'
 import Slider from './Slider'
+import Categories from './Categories'
 
 export default function HomeScreen() {
     return (
@@ -11,6 +12,9 @@ export default function HomeScreen() {
 
             {/* Slider */}
             <Slider />
+
+            {/* Categories */}
+            <Categories/>
         </View>
     )
 }
